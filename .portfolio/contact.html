@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact — Your Name Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav>
+  <!-- Logo - clicking returns to home -->
+  <div class="logo">
+    <a href="index.html">YourName</a>
+  </div>
+
+  <!-- Navigation links -->
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+
+    <!-- Dropdown with mega menu - 3 column grid -->
+    <li class="dropdown">
+      <a href="#">Projects ▾</a>
+      <div class="dropdown-menu">
+        <!-- Column 1: Design Projects -->
+        <div class="dropdown-column">
+          <h4>Design Projects</h4>
+          <a href="logo.html">Logo Design</a>
+          <a href="branding.html">Brand Identity</a>
+          <a href="brochure.html">Brochure Design</a>
+          <a href="presentation.html">Presentation Design</a>
+          <a href="social.html">Social Media</a>
+          <a href="experimental.html">Experimental</a>
+        </div>
+
+        <!-- Column 2: Web Development Projects -->
+        <div class="dropdown-column">
+          <h4>Web Development</h4>
+          <a href="web.html">Web Design</a>
+          <a href="webdev-portfolio.html">Portfolio Sites</a>
+          <a href="webdev-ecommerce.html">E-Commerce</a>
+          <a href="webdev-landing.html">Landing Pages</a>
+          <a href="webdev-apps.html">Web Apps</a>
+        </div>
+
+        <!-- Column 3: Video Editing Projects -->
+        <div class="dropdown-column">
+          <h4>Video Editing</h4>
+          <a href="video-commercial.html">Commercial Ads</a>
+          <a href="video-youtube.html">YouTube Content</a>
+          <a href="video-motion.html">Motion Graphics</a>
+          <a href="video-social.html">Social Media Videos</a>
+          <a href="video-music.html">Music Videos</a>
+        </div>
+      </div>
+    </li>
+
+    <!-- About link -->
+    <li><a href="about.html">About</a></li>
+  </ul>
+
+  <!-- Call-to-action button -->
+  <a href="contact.html" class="cta active">Get in Touch</a>
+</nav>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+<section class="contact-section">
+  <div class="contact-container reveal">
+    <h2>Get In Touch</h2>
+    <p class="subtitle">Have a project in mind? Let's work together and create something amazing!</p>
+
+    <!-- Contact Form -->
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <!-- Name input -->
+      <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required placeholder="John Doe">
+      </div>
+
+      <!-- Email input -->
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com">
+      </div>
+
+      <!-- Subject input -->
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+      </div>
+
+      <!-- Project type select -->
+      <div class="form-group">
+        <label for="project-type">Project Type</label>
+        <select id="project-type" name="project-type" style="padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; font-family: 'Inter', sans-serif;">
+          <option value="">Select a project type</option>
+          <option value="logo">Logo Design</option>
+          <option value="branding">Brand Identity</option>
+          <option value="web">Web Design</option>
+          <option value="video">Video Editing</option>
+          <option value="social">Social Media</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Budget range -->
+      <div class="form-group">
+        <label for="budget">Budget Range</label>
+        <select id="budget" name="budget" style="padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; font-family: 'Inter', sans-serif;">
+          <option value="">Select your budget</option>
+          <option value="500-1000">$500 - $1,000</option>
+          <option value="1000-2500">$1,000 - $2,500</option>
+          <option value="2500-5000">$2,500 - $5,000</option>
+          <option value="5000+">$5,000+</option>
+        </select>
+      </div>
+
+      <!-- Message textarea -->
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required placeholder="Tell me about your project, goals, timeline, and any specific requirements..."></textarea>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+
+    <!-- Contact Information Cards -->
+    <div class="contact-info">
+      <div class="info-card">
+        <h4>📧 Email</h4>
+        <p>yourname@email.com</p>
+        <a href="mailto:yourname@email.com" style="color: #6c63ff; text-decoration: none; font-size: 14px;">Send Email</a>
+      </div>
+
+      <div class="info-card">
+        <h4>📱 Phone</h4>
+        <p>+1 234 567 890</p>
+        <a href="tel:+1234567890" style="color: #6c63ff; text-decoration: none; font-size: 14px;">Call Now</a>
+      </div>
+
+      <div class="info-card">
+        <h4>📍 Location</h4>
+        <p>Your City, Country</p>
+        <p style="font-size: 14px; opacity: 0.7;">Available for remote work</p>
+      </div>
+    </div>
+
+    <!-- Social Links -->
+    <div style="margin-top: 40px; text-align: center;">
+      <h3 style="margin-bottom: 20px; font-size: 18px;">Connect With Me</h3>
+      <div class="socials">
+        <a href="#" target="_blank" style="margin: 0 15px; color: #6c63ff; text-decoration: none; font-size: 16px;">Instagram</a>
+        <a href="#" target="_blank" style="margin: 0 15px; color: #6c63ff; text-decoration: none; font-size: 16px;">Behance</a>
+        <a href="#" target="_blank" style="margin: 0 15px; color: #6c63ff; text-decoration: none; font-size: 16px;">LinkedIn</a>
+        <a href="#" target="_blank" style="margin: 0 15px; color: #6c63ff; text-decoration: none; font-size: 16px;">Dribbble</a>
+        <a href="#" target="_blank" style="margin: 0 15px; color: #6c63ff; text-decoration: none; font-size: 16px;">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Availability notice -->
+    <div style="margin-top: 40px; padding: 20px; background: rgba(108, 99, 255, 0.1); border-radius: 15px; border: 1px solid rgba(108, 99, 255, 0.2); text-align: center;">
+      <h4 style="color: #6c63ff; margin-bottom: 10px;">✨ Currently Available for Projects</h4>
+      <p style="opacity: 0.9;">I typically respond within 24 hours. Looking forward to hearing from you!</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer>
+  <h3>Your Name</h3>
+  <p>Graphic Designer & Creative Professional</p>
+  <p>Email: yourname@email.com | Phone: +1 234 567 890</p>
+  <div class="socials">
+    <a href="#" target="_blank">Instagram</a>
+    <a href="#" target="_blank">Behance</a>
+    <a href="#" target="_blank">GitHub</a>
+    <a href="#" target="_blank">LinkedIn</a>
+  </div>
+  <p style="margin-top: 30px; opacity: 0.6; font-size: 14px;">© 2024 Your Name. All rights reserved.</p>
+</footer>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>

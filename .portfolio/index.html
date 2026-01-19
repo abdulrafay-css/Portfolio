@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Your Name — Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav>
+    <!-- Logo - clicking returns to home -->
+    <div class="logo">
+        <a href="index.html">YourName</a>
+    </div>
+
+    <!-- Navigation links -->
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Dropdown with mega menu - 3 column grid -->
+        <li class="dropdown">
+            <a href="#">Projects ▾</a>
+            <div class="dropdown-menu">
+                <!-- Column 1: Design Projects -->
+                <div class="dropdown-column">
+                    <h4>Design Projects</h4>
+                    <a href="logo.html">Logo Design</a>
+                    <a href="branding.html">Brand Identity</a>
+                    <a href="brochure.html">Brochure Design</a>
+                    <a href="presentation.html">Presentation Design</a>
+                    <a href="social.html">Social Media</a>
+                    <a href="experimental.html">Experimental</a>
+                </div>
+
+                <!-- Column 2: Web Development Projects -->
+                <div class="dropdown-column">
+                    <h4>Web Development</h4>
+                    <a href="web.html">Web Design</a>
+                    <a href="webdev-portfolio.html">Portfolio Sites</a>
+                    <a href="webdev-ecommerce.html">E-Commerce</a>
+                    <a href="webdev-landing.html">Landing Pages</a>
+                    <a href="webdev-apps.html">Web Apps</a>
+                </div>
+
+                <!-- Column 3: Video Editing Projects -->
+                <div class="dropdown-column">
+                    <h4>Video Editing</h4>
+                    <a href="video-commercial.html">Commercial Ads</a>
+                    <a href="video-youtube.html">YouTube Content</a>
+                    <a href="video-motion.html">Motion Graphics</a>
+                    <a href="video-social.html">Social Media Videos</a>
+                    <a href="video-music.html">Music Videos</a>
+                </div>
+            </div>
+        </li>
+
+        <!-- About link -->
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+    <!-- Call-to-action button -->
+    <a href="contact.html" class="cta">Get in Touch</a>
+</nav>
+
+<!-- ==================== HERO SECTION ==================== -->
+<section class="hero" id="home">
+    <p class="fade-in">Welcome to my portfolio</p>
+    <h1 class="fade-in delay">
+        Creative Graphic Designer<br>
+        Crafting Visual Experiences
+    </h1>
+    <button class="fade-in delay-2" onclick="document.querySelector('.works').scrollIntoView({behavior: 'smooth'})">View My Work</button>
+</section>
+
+<!-- ==================== FEATURED WORKS SECTION ==================== -->
+<section class="works">
+    <h2 class="section-title reveal">Featured Projects</h2>
+
+    <div class="grid">
+        <!-- Project Card 1 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?1" alt="Brand Identity Project">
+            <div class="card-content">
+                <h3>Brand Identity</h3>
+                <span>Brand Design</span>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?2" alt="Mobile UI Project">
+            <div class="card-content">
+                <h3>Mobile UI</h3>
+                <span>UI / UX</span>
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?3" alt="Presentation Project">
+            <div class="card-content">
+                <h3>Presentation</h3>
+                <span>Slides</span>
+            </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?4" alt="Poster Design Project">
+            <div class="card-content">
+                <h3>Poster Design</h3>
+                <span>Marketing</span>
+            </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?5" alt="Web Development Project">
+            <div class="card-content">
+                <h3>E-Commerce Site</h3>
+                <span>Web Development</span>
+            </div>
+        </div>
+
+        <!-- Project Card 6 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?6" alt="Video Editing Project">
+            <div class="card-content">
+                <h3>Commercial Ad</h3>
+                <span>Video Editing</span>
+            </div>
+        </div>
+
+        <!-- Project Card 7 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?7" alt="Logo Design Project">
+            <div class="card-content">
+                <h3>Startup Logo</h3>
+                <span>Logo Design</span>
+            </div>
+        </div>
+
+        <!-- Project Card 8 -->
+        <div class="card reveal">
+            <img src="https://picsum.photos/500/400?8" alt="Social Media Project">
+            <div class="card-content">
+                <h3>Social Campaign</h3>
+                <span>Social Media</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer id="contact">
+    <h3>Your Name</h3>
+    <p>Graphic Designer & Creative Professional</p>
+    <p>Email: yourname@email.com | Phone: +1 234 567 890</p>
+    <div class="socials">
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Behance</a>
+        <a href="#" target="_blank">GitHub</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </div>
+    <p style="margin-top: 30px; opacity: 0.6; font-size: 14px;">© 2024 Your Name. All rights reserved.</p>
+</footer>
+
+<!-- Link to external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
