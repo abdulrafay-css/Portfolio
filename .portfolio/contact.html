@@ -78,19 +78,19 @@
     <!-- Contact Form -->
     <form class="contact-form" onsubmit="handleSubmit(event)">
       <!-- Name input -->
-      <div class="form-group">
+      <div class="form-group" style="background-color: #111122;">
         <label for="name">Your Name *</label>
         <input type="text" id="name" name="name" required placeholder="John Doe">
       </div>
 
       <!-- Email input -->
-      <div class="form-group">
+      <div class="form-group" style="background-color: #111122">
         <label for="email">Email Address *</label>
         <input type="email" id="email" name="email" required placeholder="john@example.com">
       </div>
 
       <!-- Subject input -->
-      <div class="form-group">
+      <div class="form-group" style="background-color: #111122">
         <label for="subject">Subject *</label>
         <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
       </div>
@@ -98,7 +98,7 @@
       <!-- Project type select -->
       <div class="form-group">
         <label for="project-type">Project Type</label>
-        <select id="project-type" name="project-type" style="padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; font-family: 'Inter', sans-serif;">
+        <select id="project-type" name="project-type" style="padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; font-family: 'Inter', sans-serif; background-color: #111122">
           <option value="">Select a project type</option>
           <option value="logo">Logo Design</option>
           <option value="branding">Brand Identity</option>
@@ -112,12 +112,16 @@
       <!-- Budget range -->
       <div class="form-group">
         <label for="budget">Budget Range</label>
-        <select id="budget" name="budget" style="padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; font-family: 'Inter', sans-serif;">
+        <select id="budget" name="budget" class="form_dropdown" style="padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: white; font-family: 'Inter', sans-serif; background-color: #111122;" >
+
           <option value="">Select your budget</option>
           <option value="500-1000">$500 - $1,000</option>
           <option value="1000-2500">$1,000 - $2,500</option>
           <option value="2500-5000">$2,500 - $5,000</option>
           <option value="5000+">$5,000+</option>
+
+     </select>
+
         </select>
       </div>
 

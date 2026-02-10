@@ -352,7 +352,7 @@ nav {
 
 /* Animated shimmer effect on about image */
 .about-image::before {
-    content: '';
+    content: 'normal';
     position: absolute;
     width: 200%;
     height: 200%;
@@ -483,6 +483,10 @@ nav {
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
     font-size: 15px;
+}
+
+.form_dropdown{
+    color: black;
 }
 
 /* Input focus state */
@@ -710,6 +714,7 @@ footer p {
 }
 
 /* Very small mobile screens */
+
 @media (max-width: 480px) {
     /* Hide navigation links, show only logo and CTA */
     .nav-links {
