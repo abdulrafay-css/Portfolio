@@ -483,6 +483,7 @@ nav {
     font-family: 'Inter', sans-serif;
     transition: all 0.3s ease;
     font-size: 15px;
+    background-color: #111122;
 }
 
 .form_dropdown{
